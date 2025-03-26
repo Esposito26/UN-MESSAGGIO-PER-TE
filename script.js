@@ -11,11 +11,11 @@ function initCanvas() {
     ctx.fillStyle = 'gold'; // Colore del "gratta e vinci"
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
-    ctx.fillStyle = 'BLACK'; // Colore del testo in azzurro
+    ctx.fillStyle = 'lightblue'; // Colore del testo in azzurro
     ctx.font = '30px Arial';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle'; // Centraggio verticale
-    ctx.fillText('🎉 GRATTA! 🎉', canvas.width / 2, canvas.height / 2);
+    ctx.fillText('🎉 VINCI! 🎉', canvas.width / 2, canvas.height / 2);
     
     ctx.globalCompositeOperation = 'destination-out'; // Imposta l'operazione per "grattare"
 }
@@ -42,7 +42,7 @@ function scratch(event) {
     ctx.beginPath();
     ctx.arc(x, y, 20, 0, Math.PI * 2, false);
     ctx.fill();
-    
+
     // Controlla se il gratta e vinci è completamente grattato
     const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
     const pixels = imageData.data;
@@ -59,7 +59,7 @@ function scratch(event) {
         ctx.fillRect(0, 0, canvas.width, canvas.height); // Applica lo sfondo azzurro
         
         // Centra il messaggio "ASPETTIAMO UN BAMBINO!"
-        ctx.fillStyle = 'blue'; // Colore del testo in nero
+        ctx.fillStyle = 'blue'; // Colore del testo in azzurro
         ctx.font = '20px Arial';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle'; // Centraggio verticale
@@ -75,6 +75,11 @@ function resetCard() {
     initCanvas();
     message.innerText = 'Gratta qui per SCOPRIRLO!';
 }
+
+// Aggiungi gli eventi del mouse
+canvas.addEventListener('mousedown', startScratch);
+canvas.addEventListener('mouseup', endScratch);
+canvas.addEventListener('mousemove', scratch);
 
 // Inizializza il gioco
 initCanvas();
