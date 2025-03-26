@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #90ee90; /* Verde chiaro */
+    display: center;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+    margin: 0;
+}
+
+.container {
+    display: center;
+   center-direction: column; /* Centra verticalmente gli elementi */
+    align-items: center; /* Centra orizzontalmente gli elementi */
+    text-align: center;
+}
+
+.scratch-card {
+    position: center;
+    width: 300px;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Aggiunto un'ombra per un effetto 3D */
+}
+
+#scratch-canvas {
+    position: center;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.message {
+    position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+.revealed {
+    background-color: #90ee90; /* Verde chiaro per lo sfondo dopo il grattato */
+}

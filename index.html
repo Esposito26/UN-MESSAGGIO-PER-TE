@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UN MESSAGGIO PER TE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ABBIAMO UN MESSAGGIO!</h1>
+        <div id="scratch-card" class="scratch-card" onmousedown="startScratch(event)" onmouseup="endScratch()" onmousemove="scratch(event)">
+            <canvas id="scratch-canvas" width="300" height="150"></canvas>
+            <div class="message" id="message">Gratta qui per SCOPRIRLO!</div>
+        </div>
+        <button onclick="resetCard()">Ricomincia</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
