@@ -11,7 +11,7 @@ body {
 .container {
     text-align: center; /* Centra il testo all'interno del container */
     background-color: white; /* Colore di sfondo per il contenitore */
-    padding: 20px; /* Padding interno */
+    padding: 30px; /* Padding interno */
     border-radius: 8px; /* Angoli arrotondati */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra per un effetto di profondità */
 }
