@@ -14,9 +14,7 @@ body {
 .text {
     margin-top: auto; /* Sposta il testo verso il basso all'interno del contenitore */
 }
-    padding: 40px; /* Padding interno */
-    border-radius: 8px; /* Angoli arrotondati */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra per un effetto di profondità */
+   
 }
 
 .scratch-card {
