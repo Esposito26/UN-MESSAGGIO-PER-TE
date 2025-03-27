@@ -28,6 +28,13 @@ body {
     align-items: center; /* Centra verticalmente il contenuto */
 }
 
+/* Assicurati che non ci sia alcun cambiamento di colore al passaggio del cursore */
+.scratch-card:hover {
+    background-color: #dcdcdc; /* Mantiene lo stesso colore di sfondo */
+}
+
+}
+
 .message {
     color: #333; /* Colore del testo */
     font-size: 16px; /* Dimensione del font */
