@@ -17,8 +17,12 @@ body {
 }
 
 .scratch-card {
+    width: 300px; /* Imposta una larghezza fissa */
+    height: 200px; /* Imposta un'altezza fissa */
+    background-color: #dcdcdc; /* Colore di sfondo per la scratch card */
     position: relative;
-    margin: 20px 0; /* Margine sopra e sotto il scratch card */
+    margin: 20px auto; /* Centra orizzontalmente */
+    border-radius: 8px; /* Angoli arrotondati */
 }
 
 .message {
