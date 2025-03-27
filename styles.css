@@ -11,23 +11,10 @@ body {
 .container {
     text-align: center; /* Centra il testo all'interno del container */
     background-color: white; /* Colore di sfondo per il contenitore */
-.text {
-    margin-top: auto; /* Sposta il testo verso il basso all'interno del contenitore */
-}
-   
-}
-
-.scratch-card {
-    width: 300px; /* Imposta una larghezza fissa */
-    height: 200px; /* Imposta un'altezza fissa */
-    background-color: #dcdcdc; /* Colore di sfondo per la scratch card */
-    position: relative;
-    margin: 20px auto; /* Centra orizzontalmente */
+    padding: 40px; /* Padding interno */
     border-radius: 8px; /* Angoli arrotondati */
-    display: flex; /* Rende il contenuto flessibile */
-    justify-content: center; /* Centra orizzontalmente il contenuto */
-    align-items: center; /* Centra verticalmente il contenuto */
-}
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra per un effetto di profondità */
+
 
 /* Assicurati che non ci sia alcun cambiamento di colore al passaggio del cursore */
 .scratch-card:hover {
