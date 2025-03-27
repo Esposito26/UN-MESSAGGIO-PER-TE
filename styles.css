@@ -14,14 +14,16 @@ body {
     padding: 20px; /* Padding interno */
     border-radius: 8px; /* Angoli arrotondati */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra per un effetto di profondità */
+    width: 90%; /* Imposta una larghezza percentuale per supportare schermi più piccoli */
+    max-width: 400px; /* Limita la larghezza massima */
 }
 
 .scratch-card {
-    width: 300px; /* Imposta una larghezza fissa */
+    width: 100%; /* Imposta la larghezza al 100% del contenitore */
     height: 200px; /* Imposta un'altezza fissa */
     background-color: #dcdcdc; /* Colore di sfondo per la scratch card */
     position: relative;
-    margin: 20px auto; /* Centra orizzontalmente */
+    margin: 20px 0; /* Margine superiore e inferiore per il contenitore */
     border-radius: 8px; /* Angoli arrotondati */
     display: flex; /* Rende il contenuto flessibile */
     justify-content: center; /* Centra orizzontalmente il contenuto */
@@ -31,4 +33,15 @@ body {
 .message {
     color: #333; /* Colore del testo */
     font-size: 16px; /* Dimensione del font */
+}
+
+/* Media Query per schermi piccoli */
+@media (max-width: 600px) {
+    .scratch-card {
+        height: 150px; /* Riduci l'altezza per schermi più piccoli */
+    }
+
+    .message {
+        font-size: 14px; /* Riduci la dimensione del font per schermi più piccoli */
+    }
 }
