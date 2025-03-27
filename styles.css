@@ -23,13 +23,12 @@ body {
     position: relative;
     margin: 20px auto; /* Centra orizzontalmente */
     border-radius: 8px; /* Angoli arrotondati */
+    display: flex; /* Rende il contenuto flessibile */
+    justify-content: center; /* Centra orizzontalmente il contenuto */
+    align-items: center; /* Centra verticalmente il contenuto */
 }
 
 .message {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centra il messaggio */
     color: #333; /* Colore del testo */
     font-size: 16px; /* Dimensione del font */
 }
