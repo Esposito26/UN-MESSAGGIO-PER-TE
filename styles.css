@@ -1,50 +1,31 @@
+/* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #90ee90; /* Verde chiaro */
-    display: center;
-    align-items: center;
-    justify-content: center;
-    height: 0;
-    margin: 0;
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Imposta l'altezza del body al 100% della viewport */
+    margin: 0; /* Rimuove il margine di default */
+    background-color: #f0f0f0; /* Colore di sfondo opzionale */
 }
 
 .container {
-    display: center;
-   center-direction: column; /* Centra verticalmente gli elementi */
-    align-items: center; /* Centra orizzontalmente gli elementi */
-    text-align: center;
+    text-align: center; /* Centra il testo all'interno del container */
+    background-color: white; /* Colore di sfondo per il contenitore */
+    padding: 20px; /* Padding interno */
+    border-radius: 8px; /* Angoli arrotondati */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra per un effetto di profondità */
 }
 
 .scratch-card {
-    position: center;
-    width: 300px;
-    height: 150px;
-    background-color: #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Aggiunto un'ombra per un effetto 3D */
-}
-
-#scratch-canvas {
-    position: center;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    border-radius: 10px;
+    position: relative;
+    margin: 20px 0; /* Margine sopra e sotto il scratch card */
 }
 
 .message {
-    position: center;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    font-size: 24px;
-    color: white;
-    text-align: center;
-}
-
-.revealed {
-    background-color: #90ee90; /* Verde chiaro per lo sfondo dopo il grattato */
+    transform: translate(-50%, -50%); /* Centra il messaggio */
+    color: #333; /* Colore del testo */
+    font-size: 16px; /* Dimensione del font */
 }
